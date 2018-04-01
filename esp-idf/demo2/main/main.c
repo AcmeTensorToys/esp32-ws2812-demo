@@ -54,17 +54,17 @@
 #define ceil(a)    ((int)((int)(a) < (a) ? (a+1) : (a)))
 
 strand_t STRANDS[] = { // Avoid using any of the strapping pins on the ESP32
-  {.rmtChannel = 1, .gpioNum = 17, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels =  93,
-   .pixels = nullptr, ._stateVars = nullptr},
-  {.rmtChannel = 2, .gpioNum = 18, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels =  93,
-   .pixels = nullptr, ._stateVars = nullptr},
-  {.rmtChannel = 3, .gpioNum = 19, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels =  64,
-   .pixels = nullptr, ._stateVars = nullptr},
+//  {.rmtChannel = 1, .gpioNum = 17, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels =  93,
+//   .pixels = nullptr, ._stateVars = nullptr},
+//  {.rmtChannel = 2, .gpioNum = 18, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels =  93,
+//   .pixels = nullptr, ._stateVars = nullptr},
+//  {.rmtChannel = 3, .gpioNum = 19, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels =  64,
+//   .pixels = nullptr, ._stateVars = nullptr},
 //{.rmtChannel = 0, .gpioNum = 16, .ledType = LED_WS2812B_V3, .brightLimit = 32, .numPixels = 256,
 // .pixels = nullptr, ._stateVars = nullptr},
 //  {.rmtChannel = 0, .gpioNum = 16, .ledType = LED_SK6812W_V1, .brightLimit = 32, .numPixels = 300,
 //   .pixels = nullptr, ._stateVars = nullptr},
-  {.rmtChannel = 0, .gpioNum = 16, .ledType = LED_WS2813_V2, .brightLimit = 32, .numPixels = 300,
+  {.rmtChannel = 0, .gpioNum = 16, .ledType = LED_WS2813_V2, .brightLimit = 32, .numPixels = 128,
    .pixels = nullptr, ._stateVars = nullptr},
 };
 
